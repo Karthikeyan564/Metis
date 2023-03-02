@@ -1,21 +1,22 @@
 {
     "DESIGN_NAME": "user_proj_example",
     "DESIGN_IS_CORE": 0,
-    "VERILOG_FILES": ["dir::../../verilog/rtl/defines.v", "dir::../../verilog/rtl/user_proj_example.v"],
+    "VERILOG_FILES": ["dir::../../verilog/rtl/defines.v", "dir::../../verilog/rtl/user_proj_example.v", "dir::../../verilog/rtl/metis.v", "dir::../../verilog/rtl/spi_slave.v", "dir::../../verilog/rtl/srnn.v", "dir::../../verilog/rtl/lfsr_neur_stochround.v" , "dir::../../verilog/rtl/lfsr_noise_neur.v" , "dir::../../verilog/rtl/lfsr_oneur_stochround.v", "dir::../../verilog/rtl/lfsr_winp_wrec.v", "dir::../../verilog/rtl/lfsr_wout.v"],
     "CLOCK_PERIOD": 10,
     "CLOCK_PORT": "wb_clk_i",
-    "CLOCK_NET": "counter.clk",
-    "FP_SIZING": "absolute",
-    "DIE_AREA": "0 0 900 600",
+    "CLOCK_NET": "metis.CLK_EXT",
+    "FP_SIZING": "relative",
+    "DIE_AREA": "0 0 2550 1250",
     "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
     "PL_BASIC_PLACEMENT": 0,
-    "PL_TARGET_DENSITY": 0.55,
+    "PL_TARGET_DENSITY": 0.2,
     "VDD_NETS": ["vccd1"],
     "GND_NETS": ["vssd1"],
     "DIODE_INSERTION_STRATEGY": 4,
     "RUN_CVC": 1,
     "pdk::sky130*": {
-        "FP_CORE_UTIL": 45,
+        "FP_CORE_UTIL": 6,
+	"CELL_PAD": 2,
         "RT_MAX_LAYER": "met4",
         "scl::sky130_fd_sc_hd": {
             "CLOCK_PERIOD": 10

@@ -6,3 +6,7 @@
 *.lst
 *.vcd
 *.gtkw
+dependencies/
+mgmt_core_wrapper
+vivado*
+caravel/
